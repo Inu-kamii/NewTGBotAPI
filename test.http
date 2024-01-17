@@ -1,0 +1,43 @@
+# GET all notes
+GET http://localhost:3000/api/notes
+###
+
+# GET notes by date
+GET http://localhost:3000/api/notes?day=9&month=1&year=2025
+###
+
+# POST add a new note
+POST http://localhost:3000/api/notes
+Content-Type: application/json
+
+{
+  "day": 9,
+  "month": 1,
+  "year": 2024,
+  "text": "New msg 2 content"
+}
+###
+
+# PUT update a note by date
+PUT http://localhost:3000/api/notes
+Content-Type: application/json
+
+{
+  "day": 9,
+  "month": 1,
+  "year": 2024,
+  "text": "Updated note content"
+}
+###
+
+# DELETE delete a note by date
+DELETE http://localhost:3000/api/notes
+Content-Type: application/json
+
+{
+  "day": 10,
+  "month": 1,
+  "year": 2024,
+  "text": "Updated note content"
+}
+###
